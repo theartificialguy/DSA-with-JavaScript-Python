@@ -35,6 +35,8 @@ console.log(maxSubArraySum_brute([5,4,-1,7,8])) // 23
 console.log(maxSubArraySum_brute([-2,1])) // 1
 
 function maxSubArraySum_kadanes(nums) {
+    // TC: O(n)
+    // SC: O(1)
     let max_sum = nums[0]; // can't be 0 as we can have -ve values in arr
     let curr_sum = 0;
     // remove -ve prefix from our curr sum to maintain max sum

@@ -40,7 +40,7 @@ function maximizeProfit_greedy(prices) {
             min_price_to_buy = prices[i]
         }
         // compute profit
-        current_profit = prices[i+1] - min_price_to_buy
+        let current_profit = prices[i+1] - min_price_to_buy
         if (current_profit > profit) {
             profit = current_profit
         }
